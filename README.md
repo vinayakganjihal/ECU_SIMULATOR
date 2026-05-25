@@ -257,27 +257,7 @@ That's all. The Load JSON / Unload JSON buttons, status bar, and unload dialog a
 
 ---
 
-## Future Improvements
 
-- CAN FD frame support
-- DoIP (Diagnostics over IP) integration
-- Real hardware ECU passthrough mode
-- Advanced fuzzing campaign automation
-- OTA (Over-The-Air) update simulation
-- Secure boot sequence simulation
-- Additional JSON handler types (DoIP config, FD profiles, OTA manifests)
-
----
-
-## Authors
-
-| Name | Role |
-|------|------|
-| **Vinayak Ganjihal** | Project Lead — core simulator, UDS engine, vulnerability framework |
-| **Abhijeet Vinod Naik** | Co-Author — pattern simulation, fuzzing validation, testing |
-| **Amirsohel Nadaf** | Co-Author — GUI development, JSON management system, logging |
-
----
 
 ## Disclaimer
 
