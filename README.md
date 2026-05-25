@@ -216,35 +216,6 @@ The GUI window opens. The default `vulnerabilities.json` is loaded automatically
 
 ---
 
-## Adding a New JSON Type (Developer Guide)
-
-The system is designed for zero-GUI extensibility. To support a new JSON format:
-
-```python
-# 1. Subclass JSONHandler in json_manager.py (or a separate module)
-class MyCustomHandler(JSONHandler):
-    TYPE_ID = "my_type"
-
-    def can_handle(self, data: dict) -> bool:
-        # Return True when this handler should own the file
-        return "my_key" in data and isinstance(data["my_key"], list)
-
-    def load(self, data, path, log, oracle):
-        # Apply data to whatever simulator subsystem you own
-        # Return (True, "success message") or (False, "error message")
-        ...
-
-    def unload(self, log, oracle):
-        # Clear state; return (True, "message")
-        ...
-
-# 2. Register it in ECU_GUI.__init__ (gui.py) — one line:
-self.json_mgr.register_handler(MyCustomHandler())
-```
-
-That's all. The Load JSON / Unload JSON buttons, status bar, and unload dialog all pick up the new type automatically.
-
----
 
 ## Use Cases
 
