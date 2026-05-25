@@ -228,14 +228,3 @@ The GUI window opens. The default `vulnerabilities.json` is loaded automatically
 
 ---
 
-
-
-## Disclaimer
-
-> This project is intended **exclusively** for:
-> - Educational and academic purposes
-> - Authorized cybersecurity research
-> - Controlled laboratory environments
->
-> **Do not use this project on any vehicle, network, or system without explicit written authorization from the owner.**
-> The authors accept no responsibility for misuse of this software.
